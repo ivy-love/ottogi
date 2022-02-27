@@ -1,0 +1,26 @@
+html, body, div, span,h1, h2, h3, h4, h5, h6,
+p, a, img, ul, li,
+fieldset, form, label, legend,
+header, nav, section, footer {
+	-webkit-user-drag: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+    direction: ltr;
+	vertical-align: baseline;
+    text-decoration: none;
+    color: #222;
+}
+/* HTML5 display-role reset for older browsers */
+header, nav, section, article, aside, footer {
+	display: block;
+}
+body {
+	line-height: 1;
+	min-width: 1190px;
+}
+ol, ul {
+	list-style: none;
+}

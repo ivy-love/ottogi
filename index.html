@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오뚜기</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple_icon_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android_icon_192.png">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="오뚜기 오키친">
+    <meta property="og:description" content="쉽고 간편하게 따라할 수 있는 맛있는 요리가 한가득! 오뚜기의 레시피 홈페이지 오'키친에 놀러오세요." />
+    <meta property="og:image" content="assets/img/open_graph.png" />
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="525">
+    <meta property="og:site_name" content="오뚜기 오키친">
+    <meta property="og:url" content="http://ivylove.dothome.co.kr/portfolio/pc_ver/pc.html" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/swiper4.5.1.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- SCRIPT -->
+    <script src="assets/js/jquery3.6.0.js"></script>
+    <script src="assets/js/swiper4.5.1.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <!-- coupon -->
+        <div class="coupon">
+            <div class="coupon_content">
+                <p class="coupon_txt">지금 회원가입하면 3천원 할인쿠폰 즉시 지급!</p>
+                <a href="javascript:void(0)" class="coupon_btn">쿠폰 받기</a>
+                <a href="javascript:void(0)" class="coupon_close">close</a>
+            </div>
+        </div>
+        <!-- End coupon -->
+        <!-- header -->
+        <div class="header">
+            <div class="header_wrapper">
+                <div class="logo_wrapper">
+                    <a href="javascript:void(0)" class="logo">logo</a>
+                </div>
+                <!-- gnb -->
+                <div class="gnb_bg"></div>
+                <ul class="gnb">
+                    <li class="gnb_list_warpper">
+                        <a href="javascript:void(0)" class="gnb_list_title">About Us</a>
+                        <ul class="gnb_list_container">
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">오뚜기소개</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">오뚜기이념</li>
+                                    <li class="gnb_sub_list">CI소개</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">지속가능경영</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">사회공헌</li>
+                                    <li class="gnb_sub_list">환경경영</li>
+                                    <li class="gnb_sub_list">윤리경영</li>
+                                    <li class="gnb_sub_list">지배구조</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">인재채용</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">인사제도</li>
+                                    <li class="gnb_sub_list">직무소개</li>
+                                    <li class="gnb_sub_list">공고 및 입사지원</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">사업장 소개</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">국내 사업장</li>
+                                    <li class="gnb_sub_list">해외 사업장</li>
+                                    <li class="gnb_sub_list">중앙 연구소</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_list_warpper">
+                        <a href="javascript:void(0)" class="gnb_list_title">Shop</a>
+                        <ul class="gnb_list_container">
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">전체제품</div>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">카테고리</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">3분 간편식</li>
+                                    <li class="gnb_sub_list">디저트</li>
+                                    <li class="gnb_sub_list">냉동간편식</li>
+                                    <li class="gnb_sub_list">라면류</li>
+                                    <li class="gnb_sub_list">컵누들/곤누들</li>
+                                    <li class="gnb_sub_list">미역</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">제품정보</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">신제품</li>
+                                    <li class="gnb_sub_list">제품소개</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">기획/선물세트</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">추천상품</li>
+                                    <li class="gnb_sub_list">인기TOP100</li>
+                                    <li class="gnb_sub_list">금주의 세트</li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                    <li class="gnb_list_warpper">
+                        <a href="javascript:void(0)" class="gnb_list_title">Event</a>
+                        <ul class="gnb_list_container">
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">기획전</div>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">이벤트</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">진행 이벤트</li>
+                                    <li class="gnb_sub_list">지난 이벤트</li>
+                                    <li class="gnb_sub_list">당첨자 발표</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">보도자료</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">뉴스/소식</li>
+                                    <li class="gnb_sub_list">사진자료실</li>
+                                    <li class="gnb_sub_list">동영상 자료실</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">미디어</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_list_warpper">
+                        <a href="javascript:void(0)" class="gnb_list_title">홍보센터</a>
+                        <ul class="gnb_list_container">
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">오뚜기 뉴스</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">설명자료</li>
+                                    <li class="gnb_sub_list">오뚜기 소식</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">오뚜기 광고</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">TV광고</li>
+                                    <li class="gnb_sub_list">지면광고</li>
+                                    <li class="gnb_sub_list">창립 50주년</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">즐거운 오뚜기</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">카드뉴스</li>
+                                    <li class="gnb_sub_list">웹툰</li>
+                                    <li class="gnb_sub_list">인포그래픽</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">투자정보</div>
+                                <ul class="gnb_sub_content">
+                                    <li class="gnb_sub_list">재무정보</li>
+                                    <li class="gnb_sub_list">공시정보</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_list_warpper">
+                        <a href="javascript:void(0)" class="gnb_list_title">CS Center</a>
+                        <ul class="gnb_list_container">
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">오뚜기소개</div>
+                                <ul class="gnb_sub_content">
+                                    <li>오뚜기이념</li>
+                                    <li>CI소개</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">지속가능경영</div>
+                                <ul class="gnb_sub_content">
+                                    <li>사회공헌</li>
+                                    <li>환경경영</li>
+                                    <li>윤리경영</li>
+                                    <li>지배구조</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">인재채용</div>
+                                <ul class="gnb_sub_content">
+                                    <li>인사제도</li>
+                                    <li>직무소개</li>
+                                    <li>공고 및 입사지원</li>
+                                </ul>
+                            </li>
+                            <li class="gnb_list_content">
+                                <div class="gnb_sub_title">사업장 소개</div>
+                                <ul class="gnb_sub_content">
+                                    <li>국내 사업장</li>
+                                    <li>해외 사업장</li>
+                                    <li>중앙 연구소</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- End gnb -->
+                <form class="search">
+                    <fieldset class="search_container">
+                        <label>
+                            <input class="search_input" type="text" placeholder="Search">
+                        </label>
+                    </fieldset>
+                    <button type="button">버튼</button>
+                </form>
+                <div class="mypage">
+                    <span class="mypage_list"><a href="javascript:void(0)" class="cart">cart</a></span>
+                    <span class="mypage_list"><a href="javascript:void(0)" class="my">my</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- End header -->
+    </header>
+    <!-- container -->
+    <div class="container">
+        <!-- main_banner -->
+        <section class="main_banner">
+            <!-- Swiper -->
+            <div class="swiper mySwiper main_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main_slide">
+                        <img src="assets/img/main_banner01.jpg" alt="main_banner01">
+                        <div class="main_txt_wrapper">
+                            <div class="main_txt_container">
+                                <p class="main_txt_desc"><span class="highlight">제철 새우</span>와 함께하는 레시피</p>
+                                <h1 class="main_txt_title">매콤쉬림프<span class="highlight">카레라이스</span></h1>
+                                <div class="main_keyword">
+                                    <a href="javascript:void(0)" class="main_keyword_item">#새우</a>
+                                    <a href="javascript:void(0)" class="main_keyword_item">#바몬드카레</a>
+                                    <a href="javascript:void(0)" class="main_keyword_item">#카레</a>
+                                </div>
+                                <a href="javascript:void(0)" class="main_btn">레시피 바로 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main_slide">
+                        <img src="assets/img/main_banner02.jpg" alt="main_banner03">
+                        <div class="main_txt_wrapper">
+                            <div class="main_txt_container">
+                                <p class="main_txt_desc"><span class="highlight">빠르고 간편하게</span> 하지만 맛은 최고!</p>
+                                <h1 class="main_txt_title">10분 내로<span class="highlight">스피드 레시피</span></h1>
+                                <div class="main_keyword">
+                                    <a href="javascript:void(0)" class="main_keyword_item">#닭가슴살 스낵랩</a>
+                                    <a href="javascript:void(0)" class="main_keyword_item">#새우버터구이</a>
+                                </div>
+                                <a href="javascript:void(0)" class="main_btn">레시피 바로 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main_slide">
+                        <img src="assets/img/main_banner03.jpg" alt="main_banner04">
+                        <div class="main_txt_wrapper">
+                            <div class="main_txt_container">
+                                <p class="main_txt_desc"><span class="highlight">향신료의 매력에</span> 푹 빠지고 싶다면?</p>
+                                <h1 class="main_txt_title">허브 전문 도서관<span class="highlight">라이브러리 H</span></h1>
+                                <div class="main_keyword">
+                                    <a href="javascript:void(0)" class="main_keyword_item">#향신료</a>
+                                    <a href="javascript:void(0)" class="main_keyword_item">#허브</a>
+                                </div>
+                                <a href="javascript:void(0)" class="main_btn">레시피 바로 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main_slide">
+                        <img src="assets/img/main_banner04.jpg" alt="main_banner05">
+                        <div class="main_txt_wrapper">
+                            <div class="main_txt_container">
+                                <p class="main_txt_desc"><span class="highlight">쉽고 빠르게</span> 따라할 수 있는</p>
+                                <h1 class="main_txt_title">새내기 요리사<span class="highlight">초보레시피</span></h1>
+                                <div class="main_keyword">
+                                    <a href="javascript:void(0)" class="main_keyword_item">#토마토냉파스타</a>
+                                    <a href="javascript:void(0)" class="main_keyword_item">#에그마요샌드위치</a>
+                                </div>
+                                <a href="javascript:void(0)" class="main_btn">레시피 바로 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper_button_wrapper">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>  
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- End Swiper -->
+        </section>
+        <!-- End main_banner -->
+        <!-- search_word -->
+        <section class="search_word">
+            <div class="search_txt">
+                <h2 class="search_title">이건어때요?<br>인기검색어</h2>
+                <p class="search_desc">고민을 덜어주는 추천 검색어</p>
+                <div class="search_keyword">
+                    <a href="javascript:void(0)" class="search_keyword_item active">#카레</a>
+                    <a href="javascript:void(0)" class="search_keyword_item">#마요네즈</a>
+                    <a href="javascript:void(0)" class="search_keyword_item">#분식</a>
+                    <a href="javascript:void(0)" class="search_keyword_item">#브런치</a>
+                    <a href="javascript:void(0)" class="search_keyword_item">#캠핑</a>
+                    <a href="javascript:void(0)" class="search_keyword_item">#간단꿀조합</a>
+                    <a href="javascript:void(0)" class="search_keyword_item">#치즈듬뿍</a>
+                </div>
+            </div>
+            <div class="search_recipe">
+                <!-- kids -->
+                <div class="recipe_item kids">
+                    <p class="recipe_title">Kid's Cooking</p>
+                    <p class="recipe_sub">키즈셰프 레시피</p>
+                    <div class="swiper mySwiper recipe_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide recipe_slide">
+                                <img src="assets/img/kids_rec01.png" alt="kids_rec01">
+                                <div class="slide_txt_wrapper">
+                                    <p class="slide_title">잼 아이스크림</p>
+                                    <div class="slide_keyword">
+                                        <p class="slide_keyword_item">#오뚜기잼</p>
+                                        <p class="slide_keyword_item">#딸기잼</p>
+                                        <p class="slide_keyword_item">#포도잼</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide recipe_slide">
+                                <img src="assets/img/kids_rec02.png" alt="kids_rec02">
+                                <div class="slide_txt_wrapper">
+                                    <p class="slide_title">옥수수푸딩</p>
+                                    <div class="slide_keyword">
+                                        <p class="slide_keyword_item">#옥수수푸딩</p>
+                                        <p class="slide_keyword_item">#콘스프</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide recipe_slide">
+                                <img src="assets/img/kids_rec03.png" alt="kids_rec03">
+                                <div class="slide_txt_wrapper">
+                                    <p class="slide_title">피자토스트</p>
+                                    <div class="slide_keyword">
+                                        <p class="slide_keyword_item">#피자토스트</p>
+                                        <p class="slide_keyword_item">#피자소스</p>
+                                        <p class="slide_keyword_item">#피자</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!-- End kids -->
+                <!-- history -->
+                <div class="recipe_item history">
+                    <p class="recipe_title">History</p>
+                    <p class="recipe_sub">최근 본 레시피</p>
+                    <p class="recipe_desc">최근에 본 레시피를 <br>다시 찾아볼 수 있습니다</p>
+                    <img src="assets/img/history_rec.jpg" alt="history_rec">
+                    <div class="history_txt_wrapper">
+                        <p class="history_title">매콤 쉬림프 카레라이스</p>
+                        <div class="history_keyword">
+                            <p class="history_keyword_item">#피자토스트</p>
+                            <p class="history_keyword_item">#피자소스</p>
+                            <p class="history_keyword_item">#피자</p>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="history_btn">더보기</a>
+                </div>
+                <!-- End history -->
+                <!-- tip -->
+                <div class="recipe_item tip">
+                    <div class="tip_txt">
+                        <div class="tip_title">
+                            오뚜기의<br>쉽고 간단한<br>계량 꿀팁!
+                        </div>
+                        <div class="tip_desc">밥숟가락, 종이컵으로<br>간단하고 쉽게 알려드립니다</div>
+                    </div>
+                </div>
+                <!-- End tip -->
+            </div>
+        </section>
+        <!-- End search_word -->
+        <!-- best_keyword -->
+        <section class="best_keyword">
+            <div class="best_keyword_wrapper">
+                <h2 class="keyword_title" data-aos="fade-up" data-aos-duration="300">베스트 키워드</h2>
+                <div class="keyword_menu" data-aos="fade-up" data-aos-duration="400">
+                    <a href="javascript:void(0)" class="keyword_list active">#치즈듬뿍</a>
+                    <a href="javascript:void(0)" class="keyword_list">#브런치</a>
+                    <a href="javascript:void(0)" class="keyword_list">#집밥</a>
+                    <a href="javascript:void(0)" class="keyword_list">#캠핑</a>
+                    <a href="javascript:void(0)" class="keyword_list">#간단 꿀조합</a>
+                </div>
+                <ul id="a1" class="menu_item active" data-aos="fade-up">
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best01.jpg" alt="best01">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#라망</span>
+                            <span>#치즈듬뿍</span>
+                            <span>#파스타소스</span>
+                            <p class="item_title">두부가지라자냐</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best02.jpg" alt="best02">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#XO만두</span>
+                            <span>#굴림만두</span>
+                            <span>#꼬치구이</span>
+                            <p class="item_title">완자꼬치</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best03.jpg" alt="best03">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#치즈듬뿍</span>
+                            <span>#단짠단짠</span>
+                            <span>#골드마요네즈</span>
+                            <p class="item_title">콘치즈</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best04.jpg" alt="best04">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#단호박</span>
+                            <span>#오리고기</span>
+                            <span>#타바스코</span>
+                            <p class="item_title">매콤오리 단호박찜</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="a2" class="menu_item" data-aos="fade-up">
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best05.jpg" alt="best05">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#오뚜기잼</span>
+                            <span>#토스트</span>
+                            <span>#치즈듬뿍</span>
+                            <p class="item_title">몬테크리스토</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best06.jpg" alt="best06">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#파스타</span>
+                            <span>#펜네</span>
+                            <span>#베이컨 감자스프</span>
+                            <p class="item_title">크림 카레 냉파스타</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best07.jpg" alt="best07">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#그릴드치즈</span>
+                            <span>#토스트</span>
+                            <span>#마요네스</span>
+                            <p class="item_title">그릴드치즈</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best08.jpg" alt="best08">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#스위트콘</span>
+                            <span>#계란</span>
+                            <span>#참치</span>
+                            <p class="item_title">콥샐러드</p>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul id="a3" class="menu_item" data-aos="fade-up">
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best09.jpg" alt="best11">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#고등어</span>
+                            <span>#고등어무조림</span>
+                            <span>#맛술</span>
+                            <p class="item_title">고등어 무조림</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best10.jpg" alt="best12">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#오늘밥상</span>
+                            <span>#얼갈이</span>
+                            <span>#얼갈이된장무침</span>
+                            <p class="item_title">얼갈이된장무침</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best11.jpg" alt="best09">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#따끈한국물</span>
+                            <span>#얼큰칼칼</span>
+                            <span>#야식</span>
+                            <p class="item_title">마라 삼계탕</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best12.jpg" alt="best10">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#오늘밥상</span>
+                            <span>#오이소박이</span>
+                            <span>#김치</span>
+                            <p class="item_title">오이소박이</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="a4" class="menu_item" data-aos="fade-up">
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best13.jpg" alt="best13">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#캠핑</span>
+                            <span>#바베큐</span>
+                            <span>#꼬치</span>
+                            <p class="item_title">바베큐 꼬치구이</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best14.jpg" alt="best14">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#칼비빔면</span>
+                            <span>#비빔면</span>
+                            <span>#파채양념</span>
+                            <p class="item_title">칼비빔면</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best15.jpg" alt="best15">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#스테이크</span>
+                            <span>#발사믹드레싱</span>
+                            <span>#한우</span>
+                            <p class="item_title">티본스테이크</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best16.jpg" alt="best16">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#따끈한국물</span>
+                            <span>#브런치</span>
+                            <span>#와인</span>
+                            <p class="item_title">해물스튜</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="a5" class="menu_item" data-aos="fade-up">
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best17.jpg" alt="best17">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#꿀생강차</span>
+                            <span>#홈카페</span>
+                            <span>#생강청</span>
+                            <p class="item_title">진저라떼</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best18.jpg" alt="best18">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#볶음밥</span>
+                            <span>#계란요리</span>
+                            <span>#치즈듬뿍</span>
+                            <p class="item_title">한라산볶음밥</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best19.jpg" alt="best19">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#검은깨</span>
+                            <span>#흑임자</span>
+                            <span>#브런치</span>
+                            <p class="item_title">흑임자 크림스프</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img_wrapper">
+                            <img src="assets/img/best20.jpg" alt="best20">
+                            <div class="keyword_bg"><span></span></div>
+                        </div>
+                        <div class="item_txt">
+                            <span>#초콜릿</span>
+                            <span>#바나나</span>
+                            <span>#단짠단짠</span>
+                            <p class="item_title">초콜릿피자</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End best_keyword -->
+        <!-- recommand_recipe -->
+        <section class="recommand_recipe">
+            <div class="recommand_recipe-wrapper">
+                <h2 class="recommand_title" data-aos="fade-up" data-aos-duration="500">추천레시피</h2>
+                <p class="recommand_desc" data-aos="fade-up" data-aos-duration="600">오뚜기가 제안하는 레시피로 최고의 순간을 만들어 보세요</p>
+                <div class="recommand_item_wrapper" data-aos="fade-up">
+                    <!-- left -->
+                    <div class="left">
+                        <div class="top">
+                            <a href="javascript:void(0)" class="item big">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/rec01.jpg" alt="rec01">
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_keyword">
+                                        <span>#3일숙성카레</span>
+                                        <span>#카레맛집</span>
+                                        <span>#쇠고기</span>
+                                    </div>
+                                    <div class="item_title">카레 비프 스튜</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom">
+                            <a href="javascript:void(0)" class="item">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/rec02.jpg" alt="rec02">
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_keyword">
+                                        <span>#3일숙성카레</span>
+                                        <span>#카레맛집</span>
+                                        <span>#쇠고기</span>
+                                    </div>
+                                    <div class="item_title">카레 비프 스튜</div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="item">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/rec03.jpg" alt="rec03">
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_keyword">
+                                        <span>#3일숙성카레</span>
+                                        <span>#카레맛집</span>
+                                        <span>#쇠고기</span>
+                                    </div>
+                                    <div class="item_title">카레 비프 스튜</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End left -->
+                    <!-- right -->
+                    <div class="right">
+                        <div class="top">
+                            <a href="javascript:void(0)" class="item">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/rec04.jpg" alt="rec04">
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_keyword">
+                                        <span>#3일숙성카레</span>
+                                        <span>#카레맛집</span>
+                                        <span>#쇠고기</span>
+                                    </div>
+                                    <div class="item_title">카레 비프 스튜</div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="item">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/rec05.jpg" alt="rec05">
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_keyword">
+                                        <span>#3일숙성카레</span>
+                                        <span>#카레맛집</span>
+                                        <span>#쇠고기</span>
+                                    </div>
+                                    <div class="item_title">카레 비프 스튜</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom">
+                            <a href="javascript:void(0)" class="item big">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/rec06.jpg" alt="rec06">
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_keyword">
+                                        <span>#3일숙성카레</span>
+                                        <span>#카레맛집</span>
+                                        <span>#쇠고기</span>
+                                    </div>
+                                    <div class="item_title">카레 비프 스튜</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End right -->
+                </div>
+            </div>
+        </section>
+        <!-- End recommand_recipe -->
+    </div>
+    <!-- End container -->
+    <!-- footer -->
+    <footer>
+        <div class="footer_container">
+            <!-- footer_logo -->
+            <a href="javascript:void(0)" class="footer_logo">logo</a>
+            <!-- End footer_logo -->
+            <!-- footer_info -->
+            <div class="footer_info">
+                <ul class="footer_info_wrapper">
+                    <li class="info_list">회사소개</li>
+                    <li class="info_list">공지사항</li>
+                    <li class="info_list">개인정보처리방침</li>
+                </ul>
+                <ul class="footer_contact_wrapper">
+                    <li class="contact_list">(주)오뚜기</li>
+                    <li class="contact_list">사업자등록번호 : 138-81-03238</li>
+                    <li class="contact_list">대표이사 이강훈</li>
+                    <li class="contact_list">(14060) 경기도 안양시 동안구 흥안대로 405 (평촌동 160)</li>
+                    <li class="contact_list">TEL : 080-024-2311</li>
+                    <li class="contact_list">E-MAIL : info@ottogi.com</li>
+                </ul>
+                <ul class="footer_copyright_wrapper">
+                    <li class="copyright_list">Copyright ⓒ ottogi co.,Ltd All Rights Reserved.</li>
+                </ul>
+            </div>
+            <!-- End footer_info -->
+            <!-- footer_link -->
+            <div class="footer_link">
+                <ul class="footer_sns">
+                    <li class="insta">insta</li>
+                    <li class="yt">yt</li>
+                    <li class="fb">fb</li>
+                    <li class="blog">blog</li>
+                </ul>
+                <div class="familysite_wrapper">
+                    <a href="javascript:void(0)" class="familysite_btn">FAMILY SITE</a>
+                    <ul class="familysite_content_wrapper">
+                        <li class="content_list"><a href="javascript:void(0)">오뚜기식용유</a></li>
+                        <li class="content_list"><a href="javascript:void(0)">오뚜기라면</a></li>
+                        <li class="content_list"><a href="javascript:void(0)">오뚜기카레</a></li>
+                        <li class="content_list"><a href="javascript:void(0)">오'키친</a></li>
+                        <li class="content_list"><a href="javascript:void(0)">오뚜기 GLOBAL</a></li>
+                        <li class="content_list"><a href="javascript:void(0)">공식홈페이지</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- End footer_link -->
+        </div>
+    </footer>
+    <!-- End footer -->
+</body>
+</html>
