@@ -777,10 +777,10 @@ header{
     display: flex;
     flex-direction: column;
     width: 640px;
-    height: 920px;
+    height: 830px;
 }
 .recommand_item_wrapper .left .top {
-    height: 560px;
+    height: 500px;
 }
 .recommand_item_wrapper .img_wrapper {
     overflow: hidden;
@@ -831,7 +831,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 640px;
-    height: 920px;
+    height: 830px;
     padding-left: 20px;
 }
 .recommand_item_wrapper .right .top {
@@ -847,7 +847,7 @@ header{
 }
 .recommand_item_wrapper .right .bottom {
     padding-top: 30px;
-    height: 560px;
+    height: 500px;
 }
 /* End right */
 /* End recommand_recipe */
