@@ -36,6 +36,11 @@ $(document).ready(function () {
 
     //main_swiper
     var swiper = new Swiper(".main_banner .main_swiper", {
+        effect: "fade",
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".main_banner .swiper-pagination",
         },
