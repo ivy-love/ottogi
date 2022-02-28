@@ -3,12 +3,12 @@ $(document).ready(function () {
     //aos animate
     AOS.init();
 
-    //header__top--btn
+    //coupon close 클릭 후 slideup
     $(".coupon_close").click(function () {
         $(".coupon").slideUp(150);
     });
 
-    //header__top--btn 클릭 후 body 올리기
+    //coupon close 클릭 후 body 올리기
     $(".coupon_close").click(function () {
         if ($(".header").scrollTop(0)) {
             $("body").animate({
