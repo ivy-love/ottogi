@@ -842,15 +842,16 @@ header{
     flex-direction: row;
     height: 300px;
 }
+.recommand_item_wrapper .right .top .img_wrapper {
+    height: 187px;
+}
 .recommand_item_wrapper .right .top .item {
     padding-right: 20px;
 }
 .recommand_item_wrapper .right .top .item:last-child {
     padding-right: 0;
 }
-.recommand_item_wrapper .right .top .img_wrapper {
-    height: 187px;
-}
+
 .recommand_item_wrapper .right .bottom {
     padding-top: 30px;
     height: 500px;
