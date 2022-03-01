@@ -826,6 +826,7 @@ header{
     padding-right: 20px;
 }
 .recommand_item_wrapper .bottom .item:last-child {
+    padding-right: 0;
 }
 /* End left */
 /* right */
