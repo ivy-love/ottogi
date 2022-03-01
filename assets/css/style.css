@@ -782,6 +782,9 @@ header{
 .recommand_item_wrapper .left .top {
     height: 500px;
 }
+.recommand_item_wrapper .left .bottom .img_wrapper {
+    height: 187px;
+}
 .recommand_item_wrapper .img_wrapper {
     overflow: hidden;
 }
@@ -816,7 +819,7 @@ header{
 .recommand_item_wrapper .left .bottom {
     display: flex;
     flex-direction: row;
-    height: 330px;
+    height: 300px;
     padding-top: 30px;
 }
 .recommand_item_wrapper .bottom .item {
@@ -837,13 +840,16 @@ header{
 .recommand_item_wrapper .right .top {
     display: flex;
     flex-direction: row;
-    height: 330px;
+    height: 300px;
 }
 .recommand_item_wrapper .right .top .item {
     padding-right: 20px;
 }
 .recommand_item_wrapper .right .top .item:last-child {
     padding-right: 0;
+}
+.recommand_item_wrapper .right .top .img_wrapper {
+    height: 187px;
 }
 .recommand_item_wrapper .right .bottom {
     padding-top: 30px;
