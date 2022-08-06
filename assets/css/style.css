@@ -672,6 +672,11 @@ header{
     background: #ff4c01;
     color: #fff;
 }
+.keyword_list.active {
+    border: 1px solid transparent;
+    background: #ff4c01;
+    color: #fff;
+}
 .best_keyword .menu_item {
     width: 100%;
     padding-top: 35px;
@@ -1003,7 +1008,7 @@ footer {
     overflow: hidden;
 }
 .familysite_content_wrapper .content_list {
-    line-height: 50px;
+    line-height: 52px;
     text-align: center;
     background: #ff4c01;
     transition: 0.2s;
@@ -1012,6 +1017,7 @@ footer {
     background: #FFC5AC;
 }
 .familysite_content_wrapper .content_list a {
+    display: block;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.5px;
