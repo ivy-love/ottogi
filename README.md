@@ -14,8 +14,8 @@
 
 - **HTML**
 - **CSS**
-- j**Query&Javascript**
-- **Photoshop**
-- **illustration**
+- **jQuery&Javascript**
 - **AOS library**
 - **SWIPER library**
+- **Photoshop**
+- **illustration**
