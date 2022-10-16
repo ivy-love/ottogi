@@ -17,3 +17,5 @@
 - j**Query&Javascript**
 - **Photoshop**
 - **illustration**
+- **AOS library**
+- **SWIPER library**
