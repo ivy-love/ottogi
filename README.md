@@ -17,8 +17,8 @@
 
 - **HTML**
 - **CSS**
-- **jQuery&Javascript**
+- **JQuery&Javascript**
 - **AOS library**
-- **SWIPER library**
+- **Swiper library**
 - **Photoshop**
 - **illustration**
