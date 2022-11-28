@@ -1,0 +1,206 @@
+/* common */
+body{
+    font-family: 'Montserrat','Noto Sans KR', sans-serif; 
+    font-size: 14px; 
+    color: var(--val-black-color);
+    line-height: 1.2; 
+    letter-spacing: -0.5px; 
+}
+:root {
+    --val-black-color: #000;
+    --val-black2-color: #3e3a39;
+    --val-white-color: #fff;
+    --val-gray-color: #aaa;
+}
+.inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* header */
+.title-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transition: 0.1s;
+}
+.title-wrap.active {
+    filter: brightness(0.75) blur(2px);
+}
+.title-wrap .title-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.9;
+    filter: brightness(0.5) blur(3px);
+}
+.title-wrap .txt-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title-wrap .txt-sub {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--val-white-color);
+    text-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+}
+.title-wrap .txt-title {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--val-white-color);
+    text-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+}
+.title-wrap .line {
+    width: 40px;
+    background: #fff;
+    display: inline-block;
+    margin-top: 40px;
+    border: none;
+    height: 2.5px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+}
+.title-wrap .percent-title,
+.title-wrap .skill-title {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--val-white-color);
+    text-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+}
+.title-wrap .percent-contents,
+.title-wrap .skill-contents {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--val-white-color);
+    text-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+}
+.title-wrap .btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+.title-wrap .btn-site {
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 50px;
+    background: var(--val-white-color);
+    color: var(--val-black-color);
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s background,.3s color,.3s border,.3s opacity;
+}
+.title-wrap .btn-site:hover {
+    outline: 2px solid var(--val-white-color);
+    background: transparent;
+    color: var(--val-white-color);
+    animation: move 2.5s infinite;
+}
+@keyframes move { 
+    0% { transform: rotate(0deg) } 
+    20% { transform: rotate(2deg) } 
+    24% { transform: rotate(-2deg) } 
+    28% { transform: rotate(2deg) } 
+    32% { transform: rotate(-2deg) } 
+    36% { transform: rotate(0deg) } 
+}
+/* main */
+main {
+    position: relative;
+    margin-top: 100vh;
+    background: var(--val-white-color);;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.introduce {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.bef-aft,
+.design {
+    margin-top: 30px;
+}
+.before .title,
+.after .title,
+.design .title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.bef-aft .before .contents,
+.bef-aft .after .contents {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.bef-aft {
+    display: flex;
+    justify-content: space-between;
+}
+.bef-aft > * {
+    width: 45%;
+}
+.before .contents,
+.after .contents {
+}
+.design {
+    position: relative;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+.design .portfolio-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.design .portfolio-img01,
+.design .portfolio-img02 {
+    width: 45%;
+    height: 100%;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 30%);
+}
+.design .portfolio-img02 {
+    margin-top: 350px;
+}
+.design .portfolio-img01 img,
+.design .portfolio-img02 img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top;
+}
+.design .portfolio-img02 img {
+    object-position: bottom;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background: var(--val-white-color);
+}
+footer .line {
+    background: #00000026;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: 0;
+}
+footer .txt-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0 40px;
+}
+footer .txt-wrap p {
+    color: var(--val-gray-color);
+    font-size: 13px;
+}
