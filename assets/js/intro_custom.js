@@ -1,29 +1,11 @@
 $(document).ready(function () {
 
-    $(window).scroll(function() {
+    $(document).scroll(function() {
 
-        if($(window).scrollTop()){
-            $('.title-wrap').addClass('active');
-        }else{
-            $('.title-wrap').removeClass('active');
-        }
-
-    })
-
-    //bg-txt scroll magic
-    // var controller = new ScrollMagic.Controller();
-
-    // var tween1 = TweenMax.to('.bg-txt', 0.5, {
-    //     left: -1500,
-    // });
-    
-    // var scene = new ScrollMagic.Scene({
-    //     triggerElement: ".design",
-    //     duration: "100%"
-    // })
-    //     .setTween(tween1)
-    //     .addTo(controller)
-
-
-
+        //.title-wrap .txt-wrap opacity
+        let scrollPos = $(this).scrollTop();
+        $(".title-wrap .txt-wrap").css({
+            opacity: 1 - scrollPos / 300
+        });
+    });
 });
