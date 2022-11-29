@@ -118,6 +118,7 @@
     /* footer */
     footer .txt-wrap {
         flex-direction: column;
+        padding: 15px 0 25px;
         line-height: 1.3;
     }
 }
